@@ -108,3 +108,21 @@ export interface FoodDetailItem {
     jjimcount: number,
     hit: number
 }
+export interface YoutubeItem {
+
+    id:{
+        videoId: string,
+    };
+    snippet:{
+        title: string,
+        description: string,
+        thumbnail:{
+            medium:{
+                url: string,
+            }
+        }
+    }
+}
+export interface YoutubeResponse {
+    items: YoutubeItem[];
+}
